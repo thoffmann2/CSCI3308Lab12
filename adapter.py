@@ -5,13 +5,15 @@ import facade
 # You can only use the Computer class from the facade.py you implemented. Do not use the classes in parts.py 
 class Adapter:
     def __init__(self):
-        pass
+        self.comp=facade.Computer()
 
     def start(self):
-        pass
+        self.comp.startComputer()
 
     def getComputerInfo(self):
-        pass
+        self.comp.printCPUInfo()
+        self.comp.printMemInfo()
+        self.comp.printHDInfo()
 
 
 # The running part. You should not modify this part.
